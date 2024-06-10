@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases Motivacionais</title>
+</head>
+<body>
+    <h1>Frases Motivacionais</h1>
+    <p id="frase-motivacional"></p>
+    <button onclick="mostrarFraseMotivacional()">Mostrar Nova Frase</button>
+
+    <script>
+      
+        const frases = [
+            "Acredite em si mesmo!",
+            "Você é mais forte do que pensa.",
+            "Nunca desista dos seus sonhos.",
+            "Cada dia é uma nova oportunidade.",
+            "A persistência é o caminho do êxito.",
+            "Seja a mudança que você deseja ver no mundo.",
+            "Grandes coisas nunca vêm de zonas de conforto.",
+            "Você é capaz de coisas incríveis.",
+            "A coragem é a resistência ao medo, o domínio do medo, não a ausência do medo.",
+            "Sucesso é a soma de pequenos esforços repetidos dia após dia."
+        ];
+
+      
+        function getFraseMotivacional() {
+            const indiceAleatorio = Math.floor(Math.random() * frases.length);
+            return frases[indiceAleatorio];
+        }
+
+     
+        function mostrarFraseMotivacional() {
+            const frase = getFraseMotivacional();
+            document.getElementById('frase-motivacional').innerText = frase;
+        }
+
+       
+        window.onload = mostrarFraseMotivacional;
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
