@@ -40,14 +40,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="index.css">
-    
+
     <title>Login</title>
 </head>
 <body>
 <div class="container">
     <h1>Acesse sua conta</h1>
     <form action="" method="POST">
-  
+
         <p>
             <label>E-mail</label>
             <input type="text" name="email" class="email">
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </p>
     </form>
     </div>
-    
+
     <script src="login.js"></script>
 </body>
 </html>
